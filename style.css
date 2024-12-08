@@ -8,8 +8,7 @@
 body {
   background-color: #ffffff;
 }
-
-header {
+body header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,36 +17,58 @@ header {
   font-family: "Oswald", sans-serif;
   text-transform: capitalize;
 }
-header h2 {
-  font-size: 2.5rem;
+body header h2 {
   font-weight: 900;
+  max-width: 15rem;
+  font-size: 2.5rem;
 }
-header span {
+body header span {
   display: flex;
   justify-content: space-between;
   width: 35%;
 }
-header span nav {
+body header span nav {
   width: 60%;
 }
-header span nav ul {
+body header span nav ul {
   min-height: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-header span nav ul li {
+body header span nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header span nav ul li a {
+body header span nav ul li a {
+  position: relative;
   text-decoration: none;
   color: #5B5B5B;
   font-size: 1.25rem;
   font-weight: 500;
+  transition: color 0.3s, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s, text-decoration 0.3s ease;
+  transition: color 0.3s, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
 }
-header button {
+body header span nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0.27vh;
+  background-color: #000000;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+body header span nav ul li a:hover {
+  color: #000000;
+}
+body header span nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+body header button {
   height: 8vh;
   width: 20%;
   background-color: #ffffff;
@@ -56,8 +77,7 @@ header button {
   font-weight: 500;
   text-transform: capitalize;
 }
-
-main .containerSerctionBackground {
+body main .containerSerctionBackground {
   background-image: url(./img/background.png);
   background-size: 100vw;
   background-repeat: no-repeat;
@@ -65,7 +85,7 @@ main .containerSerctionBackground {
   text-transform: capitalize;
   position: relative;
 }
-main .containerSerctionBackground .containerArticleBackground {
+body main .containerSerctionBackground .containerArticleBackground {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   height: 40rem;
@@ -77,15 +97,15 @@ main .containerSerctionBackground .containerArticleBackground {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-main .containerSerctionBackground .containerArticleBackground h1 {
+body main .containerSerctionBackground .containerArticleBackground h1 {
   font-size: 6rem;
   font-weight: 700;
 }
-main .containerSerctionBackground .containerArticleBackground p {
+body main .containerSerctionBackground .containerArticleBackground p {
   font-size: 2rem;
   font-weight: 300;
 }
-main .containerSerctionBackground .containerArticleBackground button {
+body main .containerSerctionBackground .containerArticleBackground button {
   background-color: #0016DF;
   color: #ffffff;
   border: none;
@@ -95,32 +115,70 @@ main .containerSerctionBackground .containerArticleBackground button {
   font-weight: 700;
   text-transform: capitalize;
 }
-main .containerSerctionGestao {
-  height: 80vh;
+body main .containerSerctionGestao {
+  min-height: 80vh;
   display: flex;
   justify-content: space-evenly;
 }
-main .containerSerctionGestao .containerArticleGestao {
+body main .containerSerctionGestao .containerArticleGestao {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
 }
-main .containerSerctionGestao .containerArticleGestao .containerTitleGestao {
+body main .containerSerctionGestao .containerArticleGestao .containerTitleGestao {
   color: #0017E9;
   font-size: 1.5rem;
   font-weight: 500;
 }
-main .containerSerctionGestao .containerArticleGestao h2 {
+body main .containerSerctionGestao .containerArticleGestao h2 {
   font-size: 2.25rem;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
 }
-main .containerSerctionGestao .containerArticleGestao .boxArticleText, main .containerSerctionGestao .containerArticleGestao a {
-  width: 29.6rem;
+body main .containerSerctionGestao .containerArticleGestao .boxArticleText, body main .containerSerctionGestao .containerArticleGestao a {
+  max-width: 29.6rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   text-decoration: none;
+}
+body footer {
+  height: 8.52vh;
+  background-color: #D8D8D8;
+  color: #001C43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+body footer p {
+  font-size: 0.875;
+}
+body footer a {
+  color: #001C43;
+  text-decoration: none;
+  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  position: relative;
+}
+body footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0.27vh;
+  background-color: #000000;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+body footer a:hover {
+  color: #8E44AD;
+}
+body footer a:hover::after {
+  width: 100%;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
