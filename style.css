@@ -57,33 +57,35 @@ header button {
   text-transform: capitalize;
 }
 
-main section {
+main .containerSerctionBackground {
   background-image: url(./img/background.png);
   background-size: 100vw;
   background-repeat: no-repeat;
   min-height: 100vh;
-  min-width: 100vw;
-  color: #ffffff;
   text-transform: capitalize;
-  font-family: "Oswald", sans-serif;
+  position: relative;
 }
-main section .containerArticle01 {
+main .containerSerctionBackground .containerArticleBackground {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
   height: 40rem;
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
-main section .containerArticle01 h1 {
+main .containerSerctionBackground .containerArticleBackground h1 {
   font-size: 6rem;
   font-weight: 700;
 }
-main section .containerArticle01 p {
+main .containerSerctionBackground .containerArticleBackground p {
   font-size: 2rem;
   font-weight: 300;
 }
-main section .containerArticle01 button {
+main .containerSerctionBackground .containerArticleBackground button {
   background-color: #0016DF;
   color: #ffffff;
   border: none;
@@ -92,5 +94,33 @@ main section .containerArticle01 button {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
-  margin-left: 2rem;
+}
+main .containerSerctionGestao {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .containerSerctionGestao .containerArticleGestao {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+main .containerSerctionGestao .containerArticleGestao .containerTitleGestao {
+  color: #0017E9;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main .containerSerctionGestao .containerArticleGestao h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+}
+main .containerSerctionGestao .containerArticleGestao .boxArticleText, main .containerSerctionGestao .containerArticleGestao a {
+  width: 29.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

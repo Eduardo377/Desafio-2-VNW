@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;                                                                                      
+    box-sizing: border-box;
 }
 
 body {
@@ -65,23 +65,24 @@ header {
 }
 
 main {
-    section {
+    .containerSerctionBackground {
         background-image: url(./img/background.png);
         background-size: 100vw;
         background-repeat: no-repeat;
         min-height: 100vh;
-        min-width: 100vw;
-        color: #ffffff;
         text-transform: capitalize;
-        font-family: 'Oswald', sans-serif;
-
-        .containerArticle01{
+        position: relative;
+        
+        .containerArticleBackground{
+            color: #ffffff;
+            font-family: 'Oswald', sans-serif;
             height: 40rem;
-            width: 50%;
+            width: 65%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            backdrop-filter: blur(2px);
             
             h1 {
                 font-size: 6rem;
@@ -102,12 +103,43 @@ main {
                 font-size: 1.5rem;
                 font-weight: 700;
                 text-transform: capitalize;
-                margin-left: 2rem;
+                
             }
         }
+        
+    }
+    
+    .containerSerctionGestao {
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
 
-        .containerArticle02 {
+        .containerArticleGestao {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: left;
             
+            .containerTitleGestao {
+                color: #0017E9;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+                font-weight: 800;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .boxArticleText, a {
+                width: 29.6rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
         }
     }
 }
