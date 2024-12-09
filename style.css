@@ -194,20 +194,63 @@ body main .sectionContacts {
   background-color: #ffffff;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex: 1;
 }
 body main .sectionContacts h2 {
   font-size: 2rem;
   font-weight: 500;
   color: #0017E9;
+  margin-top: 7rem;
 }
 body main .sectionContacts p {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
+  margin-top: 0.875rem;
+  margin-bottom: 1rem;
+}
+body main .sectionContacts article .boxGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2.313rem;
+}
+body main .sectionContacts article .boxGallery figcaption {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+body main .sectionContacts form div {
+  max-width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+body main .sectionContacts form div label {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+body main .sectionContacts form div input, body main .sectionContacts form div textarea {
+  padding: 1rem;
+  font-size: 1rem;
+}
+body main .sectionContacts form div textarea {
+  max-height: 6.938rem;
+}
+body main .sectionContacts form .inputSend {
+  width: 100%;
+  background-color: #0017E9;
+  color: #ffffff;
+  height: 3.625rem;
+  margin-top: 3.75rem;
+  max-width: 18.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-weight: 500;
 }
 body footer {
-  border-top: red 1px solid;
   height: 8.52vh;
   background-color: #D8D8D8;
   color: #001C43;
