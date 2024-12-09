@@ -166,7 +166,16 @@ body {
             }
         }
 
-        
+        .contaiberSertionSolution {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .boxCard {
+                max-width: 22.938rem;
+            }
+        }
     }
 
     footer {

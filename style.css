@@ -144,6 +144,15 @@ body main .containerSerctionGestao .containerArticleGestao .boxArticleText, body
   font-size: 1.5rem;
   text-decoration: none;
 }
+body main .contaiberSertionSolution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .contaiberSertionSolution .boxCard {
+  max-width: 22.938rem;
+}
 body footer {
   height: 8.52vh;
   background-color: #D8D8D8;
