@@ -47,7 +47,9 @@ body header span nav ul li a {
   color: #5B5B5B;
   font-size: 1.25rem;
   font-weight: 500;
+  transition: color 0.3s, -webkit-text-decoration 0.3s ease;
   transition: color 0.3s, text-decoration 0.3s ease;
+  transition: color 0.3s, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
 }
 body header span nav ul li a::after {
   content: "";
@@ -92,7 +94,8 @@ body main .containerSectionBackground .containerArticleBackground {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 body main .containerSectionBackground .containerArticleBackground h1 {
   font-size: 6rem;
@@ -266,7 +269,9 @@ body footer p {
 body footer a {
   color: #001C43;
   text-decoration: none;
+  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
   transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
   position: relative;
 }
 body footer a::after {
@@ -285,6 +290,4 @@ body footer a:hover {
 body footer a:hover::after {
   width: 100%;
   left: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
