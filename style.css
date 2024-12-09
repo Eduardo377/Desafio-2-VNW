@@ -223,7 +223,10 @@ body main .sectionContacts article .boxGallery figcaption {
   font-weight: 500;
   font-size: 1.25rem;
 }
-body main .sectionContacts form div {
+body main .sectionContacts form fieldset {
+  border: none;
+}
+body main .sectionContacts form fieldset div {
   max-width: 18.75rem;
   display: flex;
   flex-direction: column;
@@ -231,15 +234,15 @@ body main .sectionContacts form div {
   font-size: 3rem;
   text-transform: uppercase;
 }
-body main .sectionContacts form div label {
+body main .sectionContacts form fieldset div label {
   font-size: 1.25rem;
   margin-top: 1rem;
 }
-body main .sectionContacts form div input, body main .sectionContacts form div textarea {
+body main .sectionContacts form fieldset div input, body main .sectionContacts form fieldset div textarea {
   padding: 1rem;
   font-size: 1rem;
 }
-body main .sectionContacts form div textarea {
+body main .sectionContacts form fieldset div textarea {
   max-height: 6.938rem;
 }
 body main .sectionContacts form .inputSend {

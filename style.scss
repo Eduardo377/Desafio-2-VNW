@@ -262,12 +262,14 @@ body {
 
             }
 
-            form {               
-                div {
-                    max-width: 18.75rem;
-                    display: flex;
-                    flex-direction: column;
-                    font-weight: 300;
+            form {
+                fieldset {
+                    border: none;
+                    div {
+                        max-width: 18.75rem;
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 300;
                     font-size: 3rem;
                     text-transform: uppercase;
 
@@ -280,12 +282,13 @@ body {
                         padding: 1rem;
                         font-size: 1rem;
                     }
-
+                    
                     textarea {
                         max-height: 6.938rem;
                     }
                 }
-
+                
+            }            
                 .inputSend {
                     width: 100%;
                     background-color: #0017E9;
