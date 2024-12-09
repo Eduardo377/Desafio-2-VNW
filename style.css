@@ -189,6 +189,23 @@ body main .contaiberSectionSolution article div p {
   font-weight: 200;
   margin: 2rem;
 }
+body main .sectionContacts {
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+body main .sectionContacts h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0017E9;
+}
+body main .sectionContacts p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+}
 body footer {
   border-top: red 1px solid;
   height: 8.52vh;

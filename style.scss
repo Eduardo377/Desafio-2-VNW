@@ -221,6 +221,30 @@ body {
                 }
             }
         }
+
+        .sectionContacts {
+            font-family: 'Oswald', sans-serif;
+            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 500;
+                color: #0017E9;
+            }
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            article {
+                
+            }
+        }
     }
 
     footer {
