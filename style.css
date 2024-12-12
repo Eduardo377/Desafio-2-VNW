@@ -311,16 +311,4 @@ body footer a:hover::after {
             backdrop-filter: none;
     background-image: none;
   }
-  .containerArticleBackground span {
-    display: flex;
-    flex-direction: column;
-  }
-  .containerArticleBackground span h1 {
-    font-size: 16px;
-    color: #000000;
-    width: 80%;
-  }
-  .containerArticleBackground span p {
-    color: #ff0000;
-  }
 }/*# sourceMappingURL=style.css.map */
