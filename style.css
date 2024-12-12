@@ -87,7 +87,7 @@ body main .containerSectionBackground .containerArticleBackground {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   height: 70vh;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
