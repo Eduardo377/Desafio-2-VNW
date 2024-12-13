@@ -327,17 +327,17 @@ body {
             transition: color 0.3s ease, text-decoration 0.3s ease;
             position: relative;
         }
-
-        a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 0.27vh;
-            background-color: #000000;
-            transition: width 0.3s ease, left 0.3s ease;
-        }
+        
+                a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 0.27vh;
+                    background-color: #000000;
+                    transition: width 0.3s ease, left 0.3s ease;
+                }
 
         a:hover {
             color: #8E44AD;
