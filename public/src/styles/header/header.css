@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header {
+  height: 17.0837867247vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+  margin-left: 7.938rem;
+}
+header h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  width: 50%;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 60%;
+}
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #5B5B5B;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.3s, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s, text-decoration 0.3s ease;
+  transition: color 0.3s, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0.27vh;
+  background-color: #000000;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #000000;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+header nav button {
+  height: 8.2698585419vh;
+  width: 25%;
+  background-color: #ffffff;
+  border: solid;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header h2,
+  header button {
+    display: none;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=header.css.map */

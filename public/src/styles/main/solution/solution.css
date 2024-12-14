@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.contaiberSectionSolution {
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  padding-top: 4rem;
+  padding-bottom: 16.188rem;
+  background-color: #D8D8D8;
+}
+.contaiberSectionSolution .textBoxSolution {
+  color: #0017E9;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 1.8rem;
+}
+.contaiberSectionSolution .textBoxSystem {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 9rem;
+}
+.contaiberSectionSolution article {
+  min-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contaiberSectionSolution article div {
+  max-width: 22.938rem;
+  height: 30.25rem;
+  background-color: #ffffff;
+}
+.contaiberSectionSolution article div figcaption {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.contaiberSectionSolution article div p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 2rem;
+}/*# sourceMappingURL=solution.css.map */

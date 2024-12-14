@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.sectionContacts {
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.sectionContacts h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0017E9;
+  margin-top: 7rem;
+}
+.sectionContacts p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 0.875rem;
+  margin-bottom: 1rem;
+}
+.sectionContacts article .boxGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2.313rem;
+}
+.sectionContacts article .boxGallery figcaption {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.sectionContacts form fieldset {
+  border: none;
+}
+.sectionContacts form fieldset div {
+  max-width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.sectionContacts form fieldset div label {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.sectionContacts form fieldset div input,
+.sectionContacts form fieldset div textarea {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.sectionContacts form fieldset div textarea {
+  max-height: 6.938rem;
+}
+.sectionContacts form .inputSend {
+  width: 100%;
+  background-color: #0017E9;
+  color: #ffffff;
+  height: 3.625rem;
+  margin-top: 3.75rem;
+  max-width: 18.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-weight: 500;
+}/*# sourceMappingURL=contacts.css.map */
