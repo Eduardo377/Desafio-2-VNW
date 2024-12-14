@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass public/src/styles --no-source-map public/assets/styles"
+    "sass": "sass sass/sty.sass sass/home.css"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --v-primary-color: #ffffff;
+  --v-secondary-color: #000000;
+  --v-grey-primary-color: #5B5B5B;
+  --v-grey-secondary-color: #D8D8D8;
+  --v-blue-primary-color: #0016DF;
+  --v-blue-secondary-color: #0017E9;
+  --v-blue-tertiary-color: #001C43;
+  --v-lilas-primary-color: #8E44AD;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +17,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--v-primary-color);
 }
 
 header {
@@ -44,12 +55,13 @@ header nav ul li {
 header nav ul li a {
   position: relative;
   text-decoration: none;
-  color: #5B5B5B;
+  color: var(--v-grey-primary-color);
   font-size: 1.25rem;
   font-weight: 500;
   transition: color 0.3s, -webkit-text-decoration 0.3s ease;
   transition: color 0.3s, text-decoration 0.3s ease;
   transition: color 0.3s, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  cursor: pointer;
 }
 header nav ul li a::after {
   content: "";
@@ -58,11 +70,11 @@ header nav ul li a::after {
   left: 50%;
   width: 0;
   height: 0.27vh;
-  background-color: #000000;
+  background-color: var(--v-secondary-color);
   transition: width 0.3s ease, left 0.3s ease;
 }
 header nav ul li a:hover {
-  color: #000000;
+  color: var(--v-secondary-color);
 }
 header nav ul li a:hover::after {
   width: 100%;
@@ -71,11 +83,12 @@ header nav ul li a:hover::after {
 header nav button {
   height: 8.2698585419vh;
   width: 25%;
-  background-color: #ffffff;
+  background-color: var(--v-primary-color);
   border: solid;
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .containerSectionBackground {
@@ -86,7 +99,7 @@ header nav button {
   text-transform: capitalize;
 }
 .containerSectionBackground .containerArticleBackground {
-  color: #ffffff;
+  color: var(--v-primary-color);
   font-family: "Oswald", sans-serif;
   height: 70vh;
   max-width: 100%;
@@ -106,8 +119,8 @@ header nav button {
   font-weight: 300;
 }
 .containerSectionBackground .containerArticleBackground button {
-  background-color: #0016DF;
-  color: #ffffff;
+  background-color: var(--v-blue-primary-color);
+  color: var(--v-primary-color);
   border: none;
   height: 3.688rem;
   width: 15.688rem;
@@ -116,6 +129,7 @@ header nav button {
   text-transform: capitalize;
   margin-top: 0.5rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .containerSectionGestao {
@@ -132,7 +146,7 @@ header nav button {
   text-align: left;
 }
 .containerSectionGestao .containerArticleGestao .containerTitleGestao {
-  color: #0017E9;
+  color: var(--v-blue-secondary-color);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -160,10 +174,10 @@ header nav button {
   font-family: "Oswald", sans-serif;
   padding-top: 4rem;
   padding-bottom: 16.188rem;
-  background-color: #D8D8D8;
+  background-color: var(--v-grey-secondary-color);
 }
 .contaiberSectionSolution .textBoxSolution {
-  color: #0017E9;
+  color: var(--v-blue-secondary-color);
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 500;
@@ -184,7 +198,7 @@ header nav button {
 .contaiberSectionSolution article div {
   max-width: 22.938rem;
   height: 30.25rem;
-  background-color: #ffffff;
+  background-color: var(--v-primary-color);
 }
 .contaiberSectionSolution article div figcaption {
   font-size: 1.5rem;
@@ -200,7 +214,7 @@ header nav button {
 
 .sectionContacts {
   font-family: "Oswald", sans-serif;
-  background-color: #ffffff;
+  background-color: var(--v-primary-color);
   min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -209,13 +223,13 @@ header nav button {
 .sectionContacts h2 {
   font-size: 2rem;
   font-weight: 500;
-  color: #0017E9;
+  color: var(--v-blue-secondary-color);
   margin-top: 7rem;
 }
 .sectionContacts p {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #000000;
+  color: var(--v-secondary-color);
   margin-top: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -254,21 +268,22 @@ header nav button {
 }
 .sectionContacts form .inputSend {
   width: 100%;
-  background-color: #0017E9;
-  color: #ffffff;
+  background-color: var(--v-blue-secondary-color);
+  color: var(--v-primary-color);
   height: 3.625rem;
   margin-top: 3.75rem;
   max-width: 18.75rem;
   font-size: 1.5rem;
   font-weight: 500;
   font-weight: 500;
+  cursor: pointer;
 }
 
 footer {
   height: 8.52vh;
   margin-top: 2rem;
-  background-color: #D8D8D8;
-  color: #001C43;
+  background-color: var(--v-grey-secondary-color);
+  color: var(--v-blue-tertiary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,12 +294,13 @@ footer p {
   font-size: 0.875;
 }
 footer a {
-  color: #001C43;
+  color: var(--v-blue-tertiary-color);
   text-decoration: none;
   transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
   transition: color 0.3s ease, text-decoration 0.3s ease;
   transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 footer a::after {
   content: "";
@@ -293,11 +309,11 @@ footer a::after {
   left: 50%;
   width: 0;
   height: 0.27vh;
-  background-color: #000000;
+  background-color: var(--v-secondary-color);
   transition: width 0.3s ease, left 0.3s ease;
 }
 footer a:hover {
-  color: #8E44AD;
+  color: var(--v-lilas-primary-color);
 }
 footer a:hover::after {
   width: 100%;
